@@ -33,6 +33,18 @@ public class StubTest {
     }
 
     @Test
+    void consecutiveCalls() {
+        when(list.size())
+                .thenReturn(42)
+                .thenThrow(new RuntimeException());
+
+        assertThat(list.size(), equalTo(42));
+        assertThrows(RuntimeException.class, () -> {
+            list.size();
+        });
+    }
+
+    @Test
     void throwsExceptionWhenCalled() {
         when(list.get(1)).thenThrow(IllegalArgumentException.class);
 
