@@ -1,4 +1,4 @@
-package de.itagile.mockito.gymnastik;
+package de.itagile.mockito.gymnastik.matcher;
 
 import org.mockito.ArgumentMatcher;
 

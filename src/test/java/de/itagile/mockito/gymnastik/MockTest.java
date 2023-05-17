@@ -7,7 +7,7 @@ import org.mockito.InOrder;
 
 import java.util.List;
 
-import static de.itagile.mockito.gymnastik.IsEvenMatcher.isEven;
+import static de.itagile.mockito.gymnastik.matcher.IsEvenMatcher.isEven;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.mockito.Mockito.*;
